@@ -114,6 +114,8 @@ export default function Login({ navigation }: StackScreenProps<any>) {
                     <Text style={styles.label}>Email</Text>
                 </View>
                 <TextInput
+                    placeholder="bob.last@gmail.com"
+                    placeholderTextColor="#9AA7B1"
                     style={[styles.input, emailIsInvalid && styles.invalid]}
                     onChangeText={(value) => setEmail(value)}
                     onEndEditing={isEmailInvalid}
@@ -123,6 +125,8 @@ export default function Login({ navigation }: StackScreenProps<any>) {
                     <Text style={styles.label}>Password</Text>
                 </View>
                 <TextInput
+                    placeholder="********"
+                    placeholderTextColor="#9AA7B1"
                     style={[styles.input, passwordIsInvalid && styles.invalid]}
                     secureTextEntry={true}
                     onChangeText={(value) => setPassword(value)}
